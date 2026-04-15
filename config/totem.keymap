@@ -167,7 +167,7 @@
         &kp AT           &kp HASH       &kp DOLLAR  &kp PERCENT        &kp SQT          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LESS_THAN   &kp GREATER_THAN  &kp GRAVE
         &kp EXCLAMATION  &kp AMPERSAND  &kp PIPE    &kp DOUBLE_QUOTES  &kp BACKSPACE    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDERSCORE  &kp MINUS         &kp EQUAL
 &trans  &kp QUESTION     &kp CARET      &kp TILDE   &kp COLON          &kp DEL          &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS        &kp ASTERISK      &kp BACKSLASH  &trans
-                                        &trans      &trans             &trans           &mo 3                 &kp KP_N0              &trans
+                                        &trans      &trans             &trans           &trans                &trans                 &trans
             >;
         };
 
