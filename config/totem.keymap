@@ -22,13 +22,6 @@
 #define TVP1 4
 #define TVP2 5
 
-&mt {
-    quick-tap-ms = <100>;
-    global-quick-tap;
-    flavor = "tap-preferred";
-    tapping-term-ms = <170>;
-};
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -132,6 +125,11 @@
             bindings = <&to 0>;
             key-positions = <20 31>;
         };
+
+        combo_backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <16 17 18>;
+        };
     };
 
     behaviors {
@@ -152,10 +150,10 @@
         default_layer {
             label = "default";
             bindings = <
-                &kp Q  &kp W  &kp E                    &lt 3 R               &kp T          &kp Y        &kp U                    &kp I         &kp O    &kp P
-                &kp A  &kp S  &kp D                    &kp F                 &kp G          &kp H        &kp J                    &kp K         &kp L    &kp SEMI
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C                    &kp V                 &kp B          &kp N        &kp M                    &kp COMMA     &kp DOT  &kp FSLH  &sk RIGHT_SHIFT
-                              &mt LEFT_COMMAND ESCAPE  &mt LEFT_CONTROL TAB  &lt 2 ENTER    &lt 1 SPACE  &mt RIGHT_ALT BACKSPACE  &lt 3 DELETE
+                &kp Q  &kp W  &kp E                    &lt 3 R               &kp T          &kp Y        &kp U                    &kp I      &kp O    &kp P
+                &kp A  &kp S  &kp D                    &kp F                 &kp G          &kp H        &kp J                    &kp K      &kp L    &kp SEMI
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C                    &kp V                 &kp B          &kp N        &kp M                    &kp COMMA  &kp DOT  &kp FSLH  &sk RIGHT_SHIFT
+                              &mt LEFT_COMMAND ESCAPE  &mt LEFT_CONTROL TAB  &lt 2 ENTER    &lt 1 SPACE  &mt RIGHT_ALT BACKSPACE  &mo 3
             >;
         };
 
